@@ -41,9 +41,3 @@ class OpenWeather(object):
             temp = item["main"]["temp"]
             wether_text += f'> {date} {weather} {temp}℃\n'
         return wether_text
-
-    def get_max_temperature(self):
-        return round(self.data["main"]["temp_max"])
-
-    def get_min_temperature(self):
-        return round(self.data["main"]["temp_min"])
